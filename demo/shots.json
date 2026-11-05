@@ -1,0 +1,40 @@
+[
+  {
+    "name": "overview",
+    "steps": [{"waitFor": "text=Team Totals"}, {"wait": 300}]
+  },
+  {
+    "name": "performance",
+    "steps": [{"waitFor": "text=Team Totals"}, {"wait": 300}],
+    "selector": ".ax-table-wrap"
+  },
+  {
+    "name": "scorecard",
+    "steps": [
+      {"waitFor": "text=Team Totals"},
+      {"click": "role=tab[name=/^Scorecard/]"},
+      {"click": "role=button[name=/Chen Wei/]"},
+      {"wait": 300}
+    ],
+    "selector": "[data-testid^='team-']"
+  },
+  {
+    "name": "best-practices",
+    "steps": [
+      {"waitFor": "text=Team Totals"},
+      {"click": "role=tab[name=/^Best Practices/]"},
+      {"waitFor": "text=Sprint 41"}
+    ],
+    "selector": "[data-testid^='team-']"
+  },
+  {
+    "name": "department-stats",
+    "steps": [
+      {"waitFor": "text=Team Totals"},
+      {"click": "role=tab[name='Department Stats']"},
+      {"waitFor": "text=Pull request throughput"},
+      {"wait": 1000}
+    ],
+    "height": 900
+  }
+]

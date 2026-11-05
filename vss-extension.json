@@ -1,0 +1,112 @@
+{
+    "manifestVersion": 1,
+    "id": "sprint-performance-tracker",
+    "version": "1.0.0",
+    "name": "Sprint Performance Tracker",
+    "description": "Track developer performance across sprints by effort and hours for all teams in your project.",
+    "publisher": "adam-wheater",
+    "categories": [
+        "Azure Boards"
+    ],
+    "tags": [
+        "sprint",
+        "performance",
+        "capacity",
+        "tracking",
+        "effort",
+        "boards",
+        "teams",
+        "agile"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "static/icon.png"
+    },
+    "screenshots": [
+        { "path": "static/screenshots/overview.png" },
+        { "path": "static/screenshots/performance.png" },
+        { "path": "static/screenshots/scorecard.png" },
+        { "path": "static/screenshots/best-practices.png" },
+        { "path": "static/screenshots/department-stats.png" }
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "links": {
+        "repository": {
+            "uri": "https://github.com/adam-wheater/azure-devops-sprint-performance-tracker"
+        },
+        "issues": {
+            "uri": "https://github.com/adam-wheater/azure-devops-sprint-performance-tracker/issues"
+        },
+        "support": {
+            "uri": "https://github.com/adam-wheater/azure-devops-sprint-performance-tracker/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/adam-wheater/azure-devops-sprint-performance-tracker"
+    },
+    "branding": {
+        "color": "#0078d4",
+        "theme": "dark"
+    },
+    "galleryFlags": [
+        "Preview"
+    ],
+    "contributions": [
+        {
+            "id": "sprint-performance-hub",
+            "type": "ms.vss-web.hub",
+            "description": "Sprint Performance Tracker hub under Boards",
+            "targets": [
+                "ms.vss-work-web.work-hub-group"
+            ],
+            "properties": {
+                "name": "Sprint Performance",
+                "order": 99,
+                "uri": "dist/SprintPerformanceTracker/SprintPerformanceTracker.html",
+                "icon": {
+                    "light": "static/icon.png",
+                    "dark": "static/icon.png"
+                }
+            }
+        }
+    ],
+    "scopes": [
+        "vso.extension.data",
+        "vso.extension.data_write",
+        "vso.work",
+        "vso.project",
+        "vso.code",
+        "vso.build"
+    ],
+    "demands": [],
+    "files": [
+        {
+            "path": "dist",
+            "addressable": true
+        },
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "overview.md",
+            "addressable": true
+        },
+        {
+            "path": "LICENSE",
+            "addressable": true
+        }
+    ]
+}
